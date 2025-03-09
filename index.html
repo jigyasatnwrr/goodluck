@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodLuck.com - World's Hardest Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<nav>
+<div class="nav-bar">
+    <div class="nav-title">
+        <img src="images/logo.jpg" alt="GoodLuck" >
+        <h2>GoodLuck.com</h2>
+    </div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    
+</div>
+<h3 class="tagline" style="background-color: orange; ">"Register if you can... and win a Netflix subscription"</h3>
+</nav>
+
+<body>
+    <div class="container1">
+        <div class="box left">
+            
+    <div class="name-input-container" >
+        <label for="nameClickField">Name: </label>
+        <input type="text" id="nameClickField" readonly >
+    </div>
+
+ 
+    <div id="modalhar" class="overlay-modalhar">
+        <div class="modalhar-content">
+            <h4>Shorter the name, shorter the headache</h4>
+            <div class="alphabet-gridhar" id="alphabetBoxhar"></div>
+            <div class="input-boxhar">
+                <label for="nameFieldhar">Name:</label>
+                <input type="text" id="nameFieldhar" readonly>
+                <button class="clear-btnhar" onclick="clearLastCharacterhar()">Clear Last</button>
+            </div>
+            <button class="close-btnhar" data-close="modalhar">Close</button>
+        </div>
+    </div>
+    <div class="name-input-container" >
+        <label for="nameClickField">Username: </label>
+        <input type="text" id="nameClickField" >
+    </div>
+    <div class="name-input-container" >
+        <label for="nameClickField">Gender: </label>
+        <input type="text" id="nameClickField" >
+    </div>
+            <div class="form-group">
+               
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <label for="phone"style="text-align:left;">Phone number: </label>
+                    <input type="text" id="phone" value="00000-00000"  style="border: 2px solid black;width: 140px;" readonly>
+                    <span></span>
+                    <button type="button" onclick="incrementPhone()">+</button>
+                </div>
+            </div> 
+<div class="container3" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <label for="age" style="white-space: nowrap;">Age: </label>
+                <input type="text" id="age" readonly 
+                    style="height: 40px; width: 200px; padding: 5px; font-size: 16px; flex: 1; min-width: 150px; border: 2px solid black;">
+                <button id="openModalBtn" 
+                    style="height: 40px; padding: 5px 15px; font-size: 16px; white-space: nowrap;">Click here</button>
+</div>
+            
+
+<div id="modal" class="modal">
+<div class="modal-content">
+<h3> Enter your Age </h3>
+
+<div class="binary-blanks">
+<div class="binary-blank">
+  <input type="text" id="blank1" readonly placeholder="0">
+  <div class="toggle-btns">
+    
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit1" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit2" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit3" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit4" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit5" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit6" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit7" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit8" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+<p>+</p>
+<div class="binary-blank">
+  <input type="text" id="blank2" readonly placeholder="0">
+  <div class="toggle-btns">
+    <!-- Toggle buttons for blank 2 -->
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit9" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit10" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit11" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit12" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit13" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit14" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit15" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit16" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+<p>+</p>
+<div class="binary-blank">
+  <input type="text" id="blank3" readonly placeholder="0">
+  <div class="toggle-btns">
+    <!-- Toggle buttons for blank 3 -->
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit17" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit18" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit19" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit20" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit21" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit22" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit23" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="bit24" class="toggle-btn">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+</div>
+
+<button id="doneBtn">Done</button>
+</div>
+</div>
+<div class="container3" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+    <label for="age" style="white-space: nowrap;">password: </label>
+    <input type="text" id="age" type="password"
+        style="height: 40px; width: 200px; padding: 5px; font-size: 16px; flex: 1; min-width: 150px; border: 2px solid black;">
+</div>
+        </div>
+        <!---->
+               
+            
+            
+               
+                <div class="box right">
+                    <label for="colorPicker">Country</label>
+                    <div style="display: flex; gap: 20px; ">
+                        <div class="color-picker" id="colorPicker" style="display: flex;
+                  flex-direction: column; "></div>
+                        <div class="canvas" id="canvas"></div>
+                    </div>
+                    <div class="controls" style="display: flex; align-items: center; gap: 10px;">
+                        <button onclick="clearLastBox()" style="height: 40px; padding: 5px 15px; font-size: 16px;">Clear Last</button>
+                        <button onclick="predictFlag()" style="height: 40px; padding: 5px 15px; font-size: 16px;">Done</button>
+                        <input type="text" id="countryInput" placeholder="Country" readonly required 
+                            style="height: 40px; width: 200px; padding: 5px; font-size: 16px;"></div>
+                    
+                            
+
+                </div>
+                
+                
+            </div>
+           
+           <div class="abcd"><button id="sub" data-bs-toggle="modal" data-bs-target="#gameModal">Register</button>
+           <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                   <div class="modal-content p-3">
+                       <h2 id="gameMessage">You have 2 chances to pick the correct glass!</h2>
+                       <div class="glasses-container">
+                           <div class="glass" id="glass0" onclick="pickGlass(0)"><div class="slip">FREE</div></div>
+                           <div class="glass" id="glass1" onclick="pickGlass(1)"><div class="slip">FREE</div></div>
+                           <div class="glass" id="glass2" onclick="pickGlass(2)"><div class="slip">FREE</div></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>   
+<footer style="display: flex; padding: auto 60px;">
+    <img src="images/images.jpg" alt="footer img">
+    <h4>Best view with bigger screen</h4>
+</footer>
+
+  
+
+<script src="script .js"></script>
+</body>
+</html>
