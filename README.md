@@ -1,4 +1,5 @@
-# Frustrating Elements
+# Goodluck.com 
+link:  https://goodluckcom.netlify.app/ 
 
 
 ---
