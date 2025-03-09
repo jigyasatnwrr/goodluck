@@ -566,3 +566,17 @@
     text-align: left;
     color: lightgreen;
 }
+#registerMessage {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.cat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    pointer-events: none;
+}

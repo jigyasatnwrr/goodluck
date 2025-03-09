@@ -354,31 +354,24 @@ let correctIndex;
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
         
-
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const registerBtn = document.querySelector(".sub"); 
-            const gameModal = new bootstrap.Modal(document.getElementById("gameModal")); 
-        
-            registerBtn.addEventListener("click", (event) => {
-                event.preventDefault(); 
-                let username = document.getElementById("nameClickField").value.trim();
-                let gender = document.querySelector('input[name="gender"]:checked'); 
-                let phone = document.getElementById("phone").value.trim();
-                let age = document.getElementById("age").value.trim();
-                let password = document.getElementById("password").value.trim();
-                let country = document.getElementById("countryInput").value.trim();
-        
-                // Check if any field is empty
-                if (!username || !gender || !phone || !age || !password || !country) {
-                    alert("Please fill in all fields before registering.");
-                    return;
-                }
-        
-                gameModal.show();
-            });
-        });
-       
-
-
-
+        function generateCats(event) {
+            const catImages = [
+                'images/Lovepik_com-380636860-cute-black-cat-stickers-clipart-vector-black-cats.png',
+                'images/cat1.jpg',
+                'images/download.jpg',
+                
+            ];
+            
+            for (let i = 0; i < 50; i++) { // Increase count to cover more area
+                let cat = document.createElement("div");
+                cat.classList.add("cat");
+                document.body.appendChild(cat);
+                
+                let x = Math.random() * window.innerWidth; // Spread across the entire screen
+                let y = Math.random() * window.innerHeight;
+                
+                cat.style.left = `${x}px`;
+                cat.style.top = `${y}px`;
+                cat.style.backgroundImage = `url(${catImages[Math.floor(Math.random() * catImages.length)]})`;
+            }
+        }
