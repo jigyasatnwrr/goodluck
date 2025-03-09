@@ -235,7 +235,18 @@
             </div>
            
            <div class="abcd"><button id="sub" data-bs-toggle="modal" data-bs-target="#gameModal">Register</button>
-           
+            <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content p-3">
+                        <h2 id="gameMessage">You have 2 chances to pick the correct glass!</h2>
+                        <div class="glasses-container">
+                            <div class="glass" id="glass0" onclick="pickGlass(0)"><div class="slip">FREE</div></div>
+                            <div class="glass" id="glass1" onclick="pickGlass(1)"><div class="slip">FREE</div></div>
+                            <div class="glass" id="glass2" onclick="pickGlass(2)"><div class="slip">FREE</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>   
 <footer style="display: flex; padding: auto 60px;">
     <img src="images/images.jpg" alt="footer img">
@@ -264,3 +275,6 @@
 <script src="script .js"></script>
 </body>
 </html>
+
+
+
