@@ -291,5 +291,66 @@ let correctIndex;
                 nameInput.value = nameField.value; 
             };
         });
-        
 
+
+        const responses = [
+            "Hello???", "Blame Chris", "Fuck you", "Fuck this", "Eat shit", 
+            "Bitch please", "Daddy chill", "Mommy? Sorry.", "Send feet pics first", 
+            "Bye.", "I'm so tired.", "Why did you wake me?", "Works on my machine.", 
+            "What the fuck do you want?", "Yeah, you have a virus.", "Read the fucking manual!!", 
+            "Bruh", "Your mom", "PEBKAC", "u up?", "wyd", "Honestly, shut the fuck up.", 
+            "Send nudes.", "She’s a 10 but...", "Great success!", "uwu", 
+            "You are loved", "Google is free", "What are those?", "Thanks Obama", "Boomer.", 
+            "Grow up.", "Honestly fuck you", "We're not happy until you're frustrated", 
+            "fu", "Oops, my bad. I could’ve sworn I was dealing with an adult.", 
+            "It looks like your man can’t satisfy you. Need some help?", 
+            "How may I help you?", "Calling 911", "This will be brought up to my therapist", 
+            "Who the fuck asked?", "Game over", "Tame me daddy", "Ok", "k"
+        ];
+        
+        // Elements
+        const chatModal = document.getElementById("chatModal");
+        const chatTriggerImg = document.getElementById("chatTriggerImg");
+        const closeChat = document.getElementById("closeChat");
+        const sendMessageBtn = document.getElementById("sendMessage");
+        const userInput = document.getElementById("userInput");
+        const chatMessages = document.getElementById("chatMessages");
+        
+        // Open chat modal
+        chatTriggerImg.addEventListener("click", () => {
+            chatModal.style.display = "flex";
+        });
+        
+        // Close chat modal
+        closeChat.addEventListener("click", () => {
+            chatModal.style.display = "none";
+        });
+        
+        // Handle sending messages
+        sendMessageBtn.addEventListener("click", sendMessage);
+        userInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") sendMessage();
+        });
+        
+        function sendMessage() {
+            let userText = userInput.value.trim();
+            if (!userText) return;
+        
+            // Display user message
+            appendMessage("You: " + userText, "user-message");
+        
+            // Get AI response
+            let aiResponse = responses[Math.floor(Math.random() * responses.length)];
+            setTimeout(() => appendMessage("AI: " + aiResponse, "ai-message"), 500);
+        
+            userInput.value = "";
+        }
+        
+        function appendMessage(text, className) {
+            let message = document.createElement("div");
+            message.classList.add(className);
+            message.textContent = text;
+            chatMessages.appendChild(message);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        

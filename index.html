@@ -214,7 +214,7 @@
             
                
                 <div class="box right">
-                    <label for="colorPicker">Country</label>
+                    <label for="colorPicker">Country flag</label>
                     <div style="display: flex; gap: 20px; ">
                         <div class="color-picker" id="colorPicker" style="display: flex;
                   flex-direction: column; "></div>
@@ -250,6 +250,24 @@
 <footer style="display: flex; padding: auto 60px;">
     <img src="images/images.jpg" alt="footer img">
     <h4>Best view with bigger screen</h4>
+    <!-- Chat Trigger Image -->
+<img id="chatTriggerImg" src="images/meta-logo.png" alt="Chat" style="cursor: pointer; width: 300px; margin-bottom: 20px; margin-left: 30px;">
+
+<!-- Chat Modal -->
+<div id="chatModal" class="ai" style="display: none;">
+    <div class="chat-box">
+        <div class="chat-header">
+            <h3>AI Chat</h3>
+            <button id="closeChat">X</button>
+        </div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input">
+            <input style="width: 600px;" type="text" id="userInput" placeholder="Say something...">
+            <button style="margin: 4px;" id="sendMessage">Send</button>
+        </div>
+    </div>
+</div>
+
 </footer>
 
   
