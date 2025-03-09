@@ -354,3 +354,28 @@ let correctIndex;
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
         
+        document.addEventListener("DOMContentLoaded", () => {
+            const registerBtn = document.querySelector(".sub"); // Select Register Button
+            const gameModal = new bootstrap.Modal(document.getElementById("gameModal")); // Bootstrap Modal
+        
+            registerBtn.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent modal from opening automatically
+        
+                let username = document.getElementById("nameClickField").value.trim();
+                let gender = document.querySelector('input[name="gender"]:checked'); // Radio button
+                let phone = document.getElementById("phone").value.trim();
+                let age = document.getElementById("age").value.trim();
+                let password = document.getElementById("password").value.trim();
+                let country = document.getElementById("countryInput").value.trim();
+        
+                // Check if any field is empty
+                if (!username || !gender || !phone || !age || !password || !country) {
+                    alert("Please fill in all fields before registering.");
+                    return;
+                }
+        
+                // Show modal only if all fields are filled
+                gameModal.show();
+            });
+        });
+       
