@@ -22,13 +22,16 @@ basically reminds user about "Fishing far and wide while the fish is in your own
 ### 5. **Enhance UX button**
 named enhance ux but actually it ruins it by flooding tons of stickers, overly dramatically misleads the user
 
-### 6. **Binary Button for Age**
+### 6. **feedback mouth**
+The mouth opening to reveal an input field is unexpected and may confuse users unfamiliar with the design.
+
+### 7. **Binary Button for Age**
 to reminds the user about the maths class he bunked:)
 
-### 7. **Country Flag Drawing**
+### 8. **Country Flag Drawing**
 bored of dropdown let's draw
 
-### 8. **Celestial DOB Picker**
+### 9. **Celestial DOB Picker**
 Like a slot machine for your birthdate, look nerdy but lil frustrating at same time
 
 ---
