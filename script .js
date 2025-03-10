@@ -513,3 +513,32 @@ function addZero(num){
 function isLeapyear(){
   return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0)
 }
+function openMouth() {
+    let mouth = document.getElementById('mouth');
+    let teeth = document.getElementById('teeth');
+    let placeholder = document.getElementById('placeholder');
+    let input = document.getElementById('feedback');
+    
+    mouth.style.height = '80px';
+    placeholder.style.display = 'none';
+    input.style.display = 'block';
+    input.focus();
+    
+    let laughInterval = setInterval(() => {
+        teeth.style.transform = teeth.style.transform === 'translateY(5px)' ? 'translateY(0px)' : 'translateY(5px)';
+    }, 100);
+    
+    setTimeout(() => {
+        clearInterval(laughInterval);
+    }, 1000);
+}
+
+function checkSubmit(event) {
+    if (event.key === 'Enter') {
+        alert("Feedback submitted: " + document.getElementById('feedback').value);
+        document.getElementById('feedback').value = "";
+        document.getElementById('feedback').style.display = 'none';
+        document.getElementById('placeholder').style.display = 'block';
+        document.getElementById('mouth').style.height = '50px';
+    }
+}
