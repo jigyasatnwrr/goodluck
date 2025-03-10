@@ -302,7 +302,7 @@ let correctIndex;
             "Send nudes.", "She’s a 10 but...", "Great success!", "uwu", 
             "You are loved", "Google is free", "What are those?", "Thanks Obama", "Boomer.", 
             "Grow up.", "Honestly fuck you", "We're not happy until you're frustrated", 
-            "fu", "Oops, my bad. I could’ve sworn I was dealing with an adult.", 
+            "go to hell","you are idiot", "Oops, my bad. I could’ve sworn I was dealing with an adult.", 
             "It looks like your man can’t satisfy you. Need some help?", 
             "How may I help you?", "Calling 911", "This will be brought up to my therapist", 
             "Who the fuck asked?", "Game over", "Tame me daddy", "Ok", "k"
@@ -357,8 +357,8 @@ let correctIndex;
         function generateCats(event) {
             const catImages = [
                 'images/Lovepik_com-380636860-cute-black-cat-stickers-clipart-vector-black-cats.png',
-                'images/cat1.jpg',
-                'images/download.jpg',
+                'images/white.png',
+                'images/leaves.png',
                 
             ];
             
@@ -375,3 +375,33 @@ let correctIndex;
                 cat.style.backgroundImage = `url(${catImages[Math.floor(Math.random() * catImages.length)]})`;
             }
         }
+//--------------------------------------------------------------------------------------captcha
+document.addEventListener("DOMContentLoaded", function() {
+    let captchaCheckbox = document.getElementById('captcha-checkbox');
+    let proceedButton = document.getElementById('captcha-button');
+    let gameContainer = document.getElementById('captcha-game-container');
+    let gameButton = document.getElementById('game-button');
+    let captchaStatus = document.getElementById('captcha-status');
+    let target = document.querySelector('.moving-target');
+
+    captchaCheckbox.addEventListener('change', function() {
+        proceedButton.disabled = !this.checked;
+    });
+
+    proceedButton.addEventListener('click', function() {
+        gameContainer.style.display = 'block';
+        captchaStatus.textContent = ''; 
+        gameButton.disabled = false; 
+    });
+
+    target.addEventListener('click', function() {
+        captchaStatus.textContent = 'You clicked the moving target! Well done!';
+        gameButton.disabled = true; 
+    });
+
+    
+    gameButton.addEventListener('click', function() {
+        captchaStatus.textContent = 'You clicked the moving target! Now, you are verified!';
+        gameButton.disabled = true; 
+    });
+});

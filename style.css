@@ -77,12 +77,7 @@
         }
         
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f0f0;
-            
-        }
+       
         .nav-bar {
             background-color: #fff;
             display: flex;
@@ -575,8 +570,84 @@
 
 .cat {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     pointer-events: none;
+}
+
+
+
+.captcha-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+#captcha-checkbox {
+    margin: 20px;
+}
+
+#captcha-button {
+    padding: 7px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#captcha-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#captcha-game-container {
+    display: none; 
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+.moving-target {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    animation: move 2s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes move {
+    0% { top: 10px; left: 10px; }
+    25% { top: 10px; left: 270px; }
+    50% { top: 170px; left: 270px; }
+    75% { top: 170px; left: 10px; }
+    100% { top: 10px; left: 10px; }
+}
+
+#game-instruction {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#captcha-status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#game-button {
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }

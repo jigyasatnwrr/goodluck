@@ -86,7 +86,7 @@
 
 <div id="modal" class="modal">
 <div class="modal-content">
-<h3> Enter your Age </h3>
+<h3> Enter your Age in binary </h3>
 
 <div class="binary-blanks">
 <div class="binary-blank">
@@ -215,6 +215,20 @@
     <input type="text" id="password" type="password"
         style="height: 40px; width: 200px; padding: 5px; font-size: 16px; flex: 1; min-width: 150px; border: 2px solid black;">
 </div>
+<div class="captcha-container">
+  <input type="checkbox" id="captcha-checkbox">
+  <label for="captcha-checkbox">I am not a robot</label>
+  <br>
+  <button id="captcha-button" disabled>Proceed</button>
+
+  <div id="captcha-game-container">
+      <div class="moving-target"></div>
+      
+      <div id="game-instruction">Click the red circle that moves!</div>
+      <button id="game-button">Click the moving target!</button>
+      <div id="captcha-status"></div>
+  </div>
+</div>
         </div>
         <!---->
                
@@ -260,7 +274,7 @@
         </div>   
 <footer style="display: flex; padding: auto 60px;">
     <img src="images/images.jpg" alt="footer img">
-    <div class="oklast" style="display: flex; flex-direction: column;"><h4>Best view with bigger screen</h4>
+    <div class="oklast" style="display: flex;text-align: center; flex-direction: column;"><h4>Best view with <br>screen bigger than 11 spans</h4>
         <h6 style="text-align:center; color: lightcoral;">Goodluck known for best <br>user experience since *twenty twenty five*</h6></div>
     
     
