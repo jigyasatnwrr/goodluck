@@ -1,4 +1,4 @@
-# Goodluck.com 
+# Goodluck.com (the bad ux experiment)
 link:  https://goodluckcom.netlify.app/ 
 
 
@@ -6,20 +6,30 @@ link:  https://goodluckcom.netlify.app/
 
 ## Features
 
-### 1. **Shuffle Box Name**
-A box that randomly shuffles the name inside it. Every time you click, the name changes position and can be difficult to track.
+### 1. **Shuffle alphabets for Name**
+A name field have to fill with shuffling alphabets, looks easy but not
 
-### 2. **Phone Number Increment**
-A phone number that automatically increments by one each time you click on it. It's frustrating as it continues to increase uncontrollably.
+### 2. **Phone Number feild that Increment by 1**
+It's actually a wrist pain
 
-### 3. **Binary Button Age**
-A button that toggles between "0" and "1" each time you press it. It simulates binary counting and can make you lose track of time.
+### 3. **A chatbox **
+which actually should Helpful Assistant 🤡 but it's a Customer Disservice
 
-### 4. **Country Flag Drawing**
-Each time you click the button, a random country flag is drawn. Flags change unexpectedly, adding an element of surprise and confusion.
+### 4. **Moving ball captcha** 
+in which is hard to catch ball to proceed , but here is  catch! the captcha can submit on click the button at middle too
+basically reminds user about "Fishing far and wide while the fish is in your own pond."
 
-### 5. **Catify Button**
-When clicked, this button fills the screen with an overwhelming number of cat images. At first fun, but soon frustrating as the cats flood the screen.
+### 5. **Enhance UX button**
+named enhance ux but actually it ruins it by flooding tons of stickers, overly dramatically misleads the user
+
+### 6. **Binary Button for Age**
+to reminds the user about the maths class he bunked:)
+
+### 7. **Country Flag Drawing**
+bored of dropdown let's draw
+
+### 8. **Celestial DOB Picker**
+Like a slot machine for your birthdate, look nerdy but lil frustrating at same time
 
 ---
 
