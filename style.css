@@ -651,3 +651,75 @@
     margin-top: 10px;
     cursor: pointer;
 }
+
+
+
+
+
+  
+  #signupArea {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #signupArea > *{
+    margin-top: 15px;
+  }
+  
+  #signupArea > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #datePicker {
+    display: flex;
+  gap: 1rem;
+  width: 75vw;
+  max-width: 400px;
+  position: absolute;
+  z-index: 99;
+
+  background-color: black;
+  border-radius: 60px 0px 60px 60px;
+
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0.7s;
+
+  cursor: grab;
+  }
+  
+  svg {
+    width: 100%;
+  }
+  
+ 
+  
+  #dateoj {
+    width: 50%;
+    max-width: 50%;
+  }
+  
+  #dateoj input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  height: 100%;
+    margin:0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  .future{
+    color: red;
+    font-size: 0.6rem;
+    font-weight: 200px;
+  }
+  
+  #dateoj input:checked ~ #datePicker{
+    clip-path: circle(150% at 100% 100%);
+  }
+  

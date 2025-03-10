@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodLuck.com - World's Hardest Registration</title>
+    <title>GoodLuck.com - Bad ui experiment</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
 
@@ -42,7 +42,7 @@
             
     <div class="name-input-container" >
         <label for="nameClickField">Name: </label>
-        <input type="text" id="nameClickField" readonly >
+        <input type="text" id="nameClickField1" readonly >
     </div>
 
  
@@ -60,11 +60,11 @@
     </div>
     <div class="name-input-container" >
         <label for="nameClickField">Username: </label>
-        <input type="text" id="nameClickField" >
+        <input type="text" id="nameClickField@" >
     </div>
     <div class="name-input-container" >
         <label for="nameClickField">Gender: </label>
-        <input type="text" id="nameClickField" >
+        <input type="text" id="nameClickField#" >
     </div>
             <div class="form-group">
                
@@ -248,7 +248,41 @@
                         <input type="text" id="countryInput" placeholder="Country" readonly required 
                             style="height: 40px; width: 200px; padding: 5px; font-size: 16px;"></div>
                     
-                            
+                            <div id="signupArea">
+                              <div>
+                                <label style="width: 185px;" for="dateoj">Date of birth
+                                </label>
+                                <button id="dateoj" style="
+                                border: none;
+                                background: #fff;
+                                color: #464646;
+                                border-radius: 0.3rem;
+                                padding: 0.5rem;
+                                cursor: pointer;
+                                position: relative;height: 52px;">
+                                  <div></div>
+                                  <input style="outline: 0;
+                                  border: none;
+                                  border-bottom: 1px solid #fff;
+                                  border-radius: 0;
+                                  width: 220px;
+                                  background: transparent;
+                                  padding: 0;
+                                  color: #fff;
+                                  -webkit-text-fill-color: #fff;
+                                  opacity: 1;" type="checkbox">
+                                  <div id="datePicker">
+                                    <svg viewBox="0 0 350 166" >
+                                    <ellipse id="ellipse" cx="175" cy="83" rx="150" ry="73"
+                                    style="fill-opacity: 0;stroke:yellow;stroke-width:0.5" />  
+                                    <image id="earth" height="15" width="15" href="images/earth.png"></image>
+                                    <image id="sun" x="105" y="68" height="30" width="30" href="images/sun.png"></image>
+                                    </svg> 
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                                  
 
                 </div>
                 
@@ -257,9 +291,9 @@
            
             <div class="abcd">
                 
-                <button id="sub" data-bs-toggle="modal" data-bs-target="#gameModal" >Register</button>
+          <button id="sub"  data-bs-toggle="modal" data-bs-target="#gameModal" >Register</button>
             
-            <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+           <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content p-3">
                         <h2 id="gameMessage">You have 2 chances to pick the correct glass!</h2>
