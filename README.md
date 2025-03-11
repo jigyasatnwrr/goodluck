@@ -7,13 +7,13 @@ link:  https://goodluckcom.netlify.app/
 ## Features
 
 ### 1. **Shuffle alphabets for Name**
-A name field have to fill with shuffling alphabets, looks easy but not
+A name field have to fill with shuffling alphabets, looks easy but not (actually feel the pain only, when you try to type your whole name)
 
 ### 2. **Phone Number feild that Increment by 1**
 It's actually a wrist pain
 
 ### 3. **A chatbox **
-which actually should Helpful Assistant 🤡 but it's a Customer Disservice
+which should a Helpful Assistant 🤡 but it's a Customer Disservice
 
 ### 4. **Moving ball captcha** 
 in which is hard to catch ball to proceed , but here is  catch! the captcha can submit on click the button at middle too
@@ -34,6 +34,7 @@ bored of dropdown let's draw
 ### 9. **Celestial DOB Picker**
 Like a slot machine for your birthdate, look nerdy but lil frustrating at same time
 
+in last when he clicked submit, he realize there is no need to feel all this pain to fill form :)
 ---
 
 ## Rationale
